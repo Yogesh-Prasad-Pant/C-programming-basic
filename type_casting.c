@@ -17,7 +17,7 @@ void main(){
 e = a;
 //explicite data type casting
 b = (int) d;
-A =  a;
+A = (char) a;
 printf("value of a  = %d and vaue of b is %d and value of e = %f and value of A = %c ",a,b,e,A);
     
     getch();
