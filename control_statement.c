@@ -59,5 +59,39 @@ void main(){
         default:
         printf("wrong month in numeric value");
     }
+    char op,rip;
+    level0:
+    printf("\nEnter an number  a and enter operator like (+,-,*,/) and finaly input another nuber b:  ");
+    scanf("%d%c%d",&a,&op,&b);
+    level1:
+    printf("\n");
+    switch(op){
+        case '+':
+        printf("%d + %d = %d ",a,b,(a+b));
+        break; 
+        case '-':
+        printf("%d - %d = %d ",a,b,(a-b));
+        break;
+        case '*':
+        printf("%d * %d = %d ",a,b,(a*b));
+        break;
+        case '/':
+        printf("%d / %d = %d ",a,b,(a/b));
+        break;
+        default:
+        printf("you entered rong operator");
 
+    }
+    printf("\n Do you want to more calulation on these data press y for yes and n for no and if you want  to enter new data press a :");
+    rip = getche();
+    if(rip=='y'||rip=='Y'){
+        printf("\n Enter new operator(+,-,*,/): ");
+       op = getche();
+       goto level1;
+    }else if(rip =='a'||rip =='A'){
+        goto level0;
+    }else{
+        printf("\n you are out of calculator");
+    }
+    getch();
 }
