@@ -1,3 +1,4 @@
+//checking the armstrong nuber 
 #include<stdio.h>
 #include<conio.h>
 void main()
@@ -12,7 +13,7 @@ void main()
         n = n/10;
     }
     if(sum == p)
-    printf("%d is armstrong number ",sum);
+    printf("%d is armstrong number ",p);
     else
     printf("%d is not an armstrong number ",p);
     getch();
