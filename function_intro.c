@@ -14,6 +14,7 @@
 // syntax : return_type function_name(data_type1 parameter1,data_type2 parameter2, ----------datat_typen parametern){
 //statements of function 
 // }
+// if no retruning value then retrun data type is void.
 
 #include<stdio.h>
 #include<conio.h>
@@ -28,7 +29,7 @@ float division(int a, int b){
     return 0;
     }
     else{
-    return (a/b);}
+    return ((float)a/b);}
 }
  int main(){
     int a,b;
@@ -37,7 +38,7 @@ float division(int a, int b){
     add(a,b);
     subtraction(a,b);
     multiplication(a,b);
-    printf("Division of %d and %d is %f",a,b,division(a,b));
+    printf("\nDivision of %d and %d is %f",a,b,division(a,b));
     return 0;
 }
 void add(int a, int b){
