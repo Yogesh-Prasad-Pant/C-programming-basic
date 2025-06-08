@@ -1,4 +1,4 @@
-// array of pointer 
+// Pointer to a array
 #include <stdio.h>
 
 int main() {

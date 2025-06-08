@@ -1,8 +1,13 @@
 // Pointer is a variable which stores the addres of another variable
+
 // syntax of pointer
 // data_type_of_pointer* name_of_poiter_variable;
+// int* p; float* q;
+//int a=5; float b = 4.7;
 //assigning addres of any varible to the pointer
 // pointer_variable_name = &Variable_name;
+// example p = &a; q = &b;
+
 // Types of pointer in c program
 // void pointer : The type of pointer which points not of any type but can be converted into any type of pointer varible 
 //by type_casting it.
